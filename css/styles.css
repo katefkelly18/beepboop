@@ -1,4 +1,13 @@
+#result {
+  display: none;
+};
+
 #robots  {
-   float: 
- } ;
-}
+   float: center;
+   padding: 20px
+   width: 10px
+};
+
+.container {
+  float: center
+};
