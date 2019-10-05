@@ -1,13 +1,21 @@
 #result {
   display: none;
-};
+}
 
-#robots  {
-   float: center;
-   padding: 20px
-   width: 10px
-};
+img  {
+  float: center;
+  padding: 2px;
+  margin: 10px
 
-.container {
-  float: center
-};
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+    background-image: url('https://images.app.goo.gl/wNrDzwB67S4utniK8');
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 4em;
+}
