@@ -10,14 +10,15 @@
   <body>
     <div class="container">
       <h1>Beep and Boop</h1>
-        <p>Enter your number below to get </p>
         <form>
         <div class="form-group">
           <label id="enter">Beep.. Boop.. Enter Number Here:</label>
-          <input type="number" class="form-control" id="number">
+          <input type="number" class="userInput" id="number" min="0">
         </div>
           <button type="submit" class="btn btn-dark">Calculate!</button>
         </form>
+        <div id="results">
+        </div>
     </div>
   </body>
   </html>

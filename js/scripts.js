@@ -1,14 +1,33 @@
 //business logic//
-var sumbittedNumber = function(numbers) {
-  var numbers = []
+var beepBoop = function(userInput) {
+  var numberArray = []
+for (index=0; index <= userInput; index++) {
+  numberArray.push(index);
 }
+var results = numberArray.map(function(user)
+var userToString = user.toString();
+if (userToString.indexOf(3) > - 1) {
+  return "I'm sorry, Dave. I'm afraid I can't do that.";
+} else if (userToString.indexOf(2) > -1) {
+  return "Boop";
+} else if (userToString.indexOf(1) > -1) {
+  return "Beep";
+} else {
+  return " " + user;
+}
+})
 
-//Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"Numbers that contain a 3: all digits are replaced (all digits) with "I'm sorry, Dave. I'm afraid I can't do that."//
-
-//The number 13 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that. "The number 21 should be replaced with "Boop".The number 32 should be replaced with "I'm sorry, Dave. I'm afraid I can't do that."//
-
+return numberArray;
+}
 
 //user interface logic//
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+
+    var userInput = $(".userInput").val();
+    var results = beepBoop(userInput);
+    console.log (results)
+    $("#results").text(results);
+})
+})
